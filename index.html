@@ -24,7 +24,13 @@
             <div class="w3-right w3-hide-small">
                 <a href="#projects" class="w3-bar-item w3-button">Projects</a>
                 <a href="#about" class="w3-bar-item w3-button">About</a>
-                <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+                <div class="w3-dropdown-click">
+                    <button onclick="clickFunction()" class="w3-button">Contact</button>
+                    <div id="contact" class="w3-dropdown-content w3-bar-item-block w3-border">
+                            <a href="https://github.com/OneHandKlap" class="w3-bar-item w3-button">GitHub</a>
+                            <a href="https://www.linkedin.com/in/adam-aboud/" class="w3-bar-item w3-button">LinkedIn</a>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>
@@ -48,14 +54,15 @@
         <div class="w3-row-padding">
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Thing 1</div>
-                    <img src="/w3images/house5.jpg" alt="House" style="width:100%">
+                    <div class="w3-display-topleft w3-black w3-padding">Data Analysis</div>
+                    <img src="imgs/C-17.jpg" alt="House" style="width:100%"><p>I can't share the exact nature of what I worked on, but I developed several algorithms to automate the analysis of aircraft data to support maintenance operations.</p>
                 </div>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-display-container">
                     <div class="w3-display-topleft w3-black w3-padding">Thing 2</div>
                     <img src="/w3images/house2.jpg" alt="House" style="width:100%">
+                    
                 </div>
             </div>
         </div>
@@ -94,5 +101,16 @@
     </footer>
 
 </body>
+
+<script>
+        function clickFunction() {
+          var x = document.getElementById("contact");
+          if (x.className.indexOf("w3-show") == -1) { 
+            x.className += " w3-show";
+          } else {
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+        </script>
 
 </html>
