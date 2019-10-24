@@ -4,6 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+    @media only screen and (max-width: 600px) {
+        span.w3-padding.w3-black.w3-opacity-min {
+            font-size: 12px;
+        }
+    }
+</style>
 
 <body>
 
@@ -15,7 +23,13 @@
             <div class="w3-right w3-hide-small">
                 <a href="#projects" class="w3-bar-item w3-button">Projects</a>
                 <a href="#about" class="w3-bar-item w3-button">About</a>
-                <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+                <div class="w3-dropdown-click">
+                    <button onclick="clickFunction()" class="w3-button">Contact</button>
+                    <div id="contact" class="w3-dropdown-content w3-bar-item-block w3-border">
+                        <a href="https://github.com/OneHandKlap" class="w3-bar-item w3-button">GitHub</a>
+                        <a href="https://www.linkedin.com/in/adam-aboud/" class="w3-bar-item w3-button">LinkedIn</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -39,26 +53,16 @@
         <div class="w3-row-padding">
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-                    <img src="/w3images/house5.jpg" alt="House" style="width:100%">
+                    <div class="w3-display-topleft w3-black w3-padding">Data Analysis</div>
+                    <img src="imgs/C-17.jpg" alt="House" style="width:100%">
+                    <p>I can't share the exact nature of what I worked on, but I developed several algorithms to automate the analysis of aircraft data to support maintenance operations.</p>
                 </div>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+                    <div class="w3-display-topleft w3-black w3-padding">Thing 2</div>
                     <img src="/w3images/house2.jpg" alt="House" style="width:100%">
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-                    <img src="/w3images/house3.jpg" alt="House" style="width:100%">
-                </div>
-            </div>
-            <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-                    <img src="/w3images/house4.jpg" alt="House" style="width:100%">
+
                 </div>
             </div>
         </div>
@@ -66,7 +70,7 @@
 
         <!-- About Section -->
         <div class="w3-container w3-padding-32" id="about">
-            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About Me<img src="imgs/self.jpg" width=50px style="padding-left: 10px"></h3>
             <p>I am a veteran who spent my first career traveling around the world with the Royal Canadian Air Force. Now, I am a student of Computer Science at Ryerson University. My interests include: traveling, motorcycles, multi-sport racing, and my
                 family.
             </p>
@@ -84,8 +88,8 @@
                 <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
                 <button class="w3-button w3-black w3-section" type="submit">
         <i class="fa fa-paper-plane"></i> SEND MESSAGE -->
-        </button>
-        </form>
+        <<<<<<< HEAD </button>
+            </form>
     </div>
 
     <!-- Image of location/map -->
@@ -94,6 +98,12 @@
     </div>
 
     <!-- End page content -->
+    =======
+    </button>
+    </form>
+    </div>
+    <!-- End page content -->
+    >>>>>>> e19a77796be3fd4be543d13af559fe4572ecd22e
     </div>
 
 
@@ -105,5 +115,16 @@
     </footer>
 
 </body>
+
+<script>
+    function clickFunction() {
+        var x = document.getElementById("contact");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+</script>
 
 </html>
