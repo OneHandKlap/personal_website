@@ -4,12 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Slabo+27px&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <style>
-.showmore .w3-show .w3-container{
-    display:block;
-}
+    .showmore .w3-show .w3-container {
+        display: block;
+    }
 </style>
+
 <body>
     <div class="w3-top">
         <div class="w3-bar w3-white w3-wide w3-padding w3-card">
@@ -19,97 +21,94 @@
                 <a href="index.html" class="w3-bar-item w3-button">Home</a>
                 <a href="index.html#projects" class="w3-bar-item w3-button">Projects</a>
                 <a href="index.html#about" class="w3-bar-item w3-button">About</a>
-                <a href="blog.html" class="w3-bar-item w3-button">Blog</a>
                 <div class="w3-dropdown-click">
                     <button onclick="clickFunction()" class="w3-button">Contact</button>
-                    <div id="contact" class="w3-dropdown-content w3-bar-item-block w3-border">
-                        <a href="https://github.com/OneHandKlap" class="w3-bar-item w3-button">GitHub</a>
+                    <div id="contact" class="w3-dropdown-content w3-bar-item-block w3-border" style="width: 150px;">
+                        <a href="https://github.com/OneHandKlap" class="w3-bar-item w3-button">My GitHub</a>
                         <a href="https://www.linkedin.com/in/adam-aboud/" class="w3-bar-item w3-button">LinkedIn</a>
                     </div>
                 </div>
+                <a href="blog.html" class="w3-bar-item w3-button">Blog</a>
+
             </div>
         </div>
     </div>
     <!-- Grid -->
-    <div class = "w3-content" style="max-width: 1400px; margin-top: 50px">
-    <div class="w3-row">
+    <div class="w3-content" style="max-width: 1400px; margin-top: 50px">
+        <div class="w3-row">
 
-    <!-- Blog entries -->
-    <div class="w3-col">
-      <!-- Blog entry -->
-      <div class="w3-card-4 w3-margin w3-white">
-        
-        <div class="w3-container w3-margin-top">
-          <h3><b>FOUR THINGS THE MILITARY TAUGHT ME ABOUT TEAMWORK</b></h3>
-          <h5>24 OCTOBER 2019</h5>
-          <img src="imgs/tcm.jpg" style="width:100%">
-        </div>
-        <div class ="w3-container">
-                <p>One of the things I was taught early on in my career was that "If you are talking about the Canadian Armed Forces you should stick to what you KNOW." So lets do that, lets jump right in.</p>
-                <div class="w3-row">
-                    <div class="w3-col m8 s12">
-                          <p><button onclick= "read_more()" class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+            <!-- Blog entries -->
+            <div class="w3-col">
+                <!-- Blog entry -->
+                <div class="w3-card-4 w3-margin w3-white" style="font-family: 'Slabo 27px', serif; font-size:13pt">
+
+                    <div class="w3-container w3-margin-top" style=" font-size: 26pt;">
+                        <p><b>Four things the Royal Canadian Air Force taught me about teamwork</b></p>
+                        <h5>24 OCTOBER 2019</h5>
+                        <img src="imgs/tcm.jpg" style="width:100%">
+                    </div>
+                    <div class="w3-container">
+                        <p>One of the things I was taught early on in my career was that "If you are talking about the Canadian Armed Forces you should stick to what you KNOW." So lets do that, lets jump right in.</p>
+                        <div class="w3-row">
+                            <div class="w3-col m8 s12">
+                                <p><button onclick="read_more()" class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+                            </div>
+                            <div class="w3-col m4 w3-hide-small">
+                            </div>
                         </div>
-                        <div class="w3-col m4 w3-hide-small">
-                        </div>        
-            </div>
-        
-        <div id="4things" class="w3-container w3-hide">
-            <br>
-          <ol>
-              <li><strong>How to follow effectively</strong>
-                <br>
-                <p>These days there are hundreds of articles on how to be a better leader, but nobody wants to discuss how to be a follower. 
-                    The truth is that not everyone wants to be a leader, or can be, and that’s OK! In fact, how can you lead people if you don’t know
-                     how they should follow you? The core of being a good follower is being able to distinguish when you are involved in the decision-making 
-                     process and when you are not. Providing your input and expertise can be critical for a team leader to make the right call, but once that 
-                     decision has been made it is vital for supporters to fall in and trust in their leader. Continuing to voice hesitations can be fractious to 
-                     team cohesion and deadly for morale. Instead, trust your lead and promote the rest of the team’s trust in her as well!
 
-                </p>
-                </li>
-                <li><strong>It's not a popularity contest</strong></li>
-                <br>
-                <p>
-                    It’s great working in an environment where everyone gets a long, goes for beers after work and develops friendships outside of the office. 
-                    But what if there are members of the team that you just don’t or CAN’T get along with? It can be easy to obsess over differences, employ every
-                     tactic possible to turn your team into something out of a LinkedIn article. But before you waste your energy be sure to correctly identify the problem.
-                      Is there something about the situation that is hindering your or the team’s productivity? Is this a problem for the team or is it a problem for you as an 
-                      individual? Letting go of the need to be the ideal teammate who is liked by everyone can save you sanity and your manager sanity. It’s not a popularity 
-                      contest!
-                </p>
-                </li>
-                <li><strong>Giving means getting</strong></li>
-                <br>
-                <p>
-                        Everyone has heard of that idiom “blah blah, stones and glass houses… blah blah.” We all have unique perspectives, often that can give us insight 
-                        into projects or people. It’s easy to feel like we should share those ideas… for the betterment of the project or whatever. Recognize however, that 
-                        when others criticize your own work it is coming from that same place. I dislike that idiom because it seems to discourage us from lobbing the proverbial 
-                        criticism-stone for fear of reciprocation, rather we should all just stop building our houses from glass! Remember that you judge others based on their 
-                        actions, but give yourself the kindness of judging yourself based on your intentions.
-                </p>
-                </li>
-                <li><strong>Compromising does not necessarily mean failure</strong></li>
-                <br>
-                <p>
-                        Today we are promising ourselves that we can have everything. We just need to “lean in” or download this new app or subscribe to that service. 
-                        It’s easy to see why sometimes compromising can feel bad. It’s important to de-couple mission critical items with “nice-to-haves”. This can be tricky to accomplish, 
-                        but it comes back to clearly thinking about your team’s mission statement, and the values that underpin it. Delaying a response to a request in order to provide more 
-                        accurate information may be a compromise to an email response policy, but hastily replying without fact checking can have dire consequences.
-                </p>
-                </li>
-                
+                        <div id="4things" class="w3-container w3-hide">
+                            <p>My career began in 2012, shortly after graduating from McGill. I went to basic training, learned everything there is to know about aircraft electronics, and began working on the CC177-GlobemasterIII (pictured above). During
+                                my 4 years of operational service, I traveled all over the world as a Technical Air-Crew Member. Here's a bit of what I learned.
+                            </p>
+                            <ol>
+                                <li><strong>How to follow effectively</strong>
+                                    <br>
+                                    <br>
+                                    <p>These days there are hundreds of articles on how to be a better leader, but nobody wants to discuss how to be a follower. The truth is that not everyone wants to be a leader, or can be, and that’s OK! In fact, how can
+                                        you lead people if you don’t know how they should follow you? The core of being a good follower is being able to distinguish when you are involved in the decision-making process and when you are not. Providing your
+                                        input and expertise can be critical for a team leader to make the right call, but once that decision has been made it is vital for supporters to fall in and trust in their leader. Continuing to voice hesitations
+                                        can be fractious to team cohesion and deadly for morale. Instead, trust your lead and promote the rest of the team’s trust in her as well!
 
-          </ol>
-          </li>
+                                    </p>
+                                </li>
+                                <li><strong>It's not a popularity contest</strong></li>
+                                <br>
+                                <p>
+                                    It’s great working in an environment where everyone gets a long, goes for beers after work and develops friendships outside of the office. But what if there are members of the team that you just don’t or CAN’T get along with? It can be easy to obsess
+                                    over differences, employ every tactic possible to turn your team into something out of a LinkedIn article. But before you waste your energy be sure to correctly identify the problem. Is there something about the situation
+                                    that is hindering your or the team’s productivity? Is this a problem for the team or is it a problem for you as an individual? Letting go of the need to be the ideal teammate who is liked by everyone can save you sanity
+                                    and your manager sanity. It’s not a popularity contest!
+                                </p>
+                                </li>
+                                <li><strong>Giving means getting</strong></li>
+                                <br>
+                                <p>
+                                    Everyone has heard of that idiom “Something something, stones and glass houses… blah blah.” We all have unique perspectives, often that can give us insight into projects or people. It’s easy to feel like we should share those ideas… for the betterment
+                                    of the project or whatever. Recognize however, that when others criticize your own work it is coming from that same place. I dislike that idiom because it seems to discourage us from lobbing the proverbial criticism-stone
+                                    for fear of reciprocation, rather we should all just stop building our houses from glass! Remember that you judge others based on their actions, but give yourself the kindness of judging yourself based on your intentions.
+                                </p>
+                                </li>
+                                <li><strong>Compromising does not necessarily mean failing</strong></li>
+                                <br>
+                                <p>
+                                    Today we are promising ourselves that we can have everything. We just need to “lean in” or download this new app or subscribe to that service. It’s easy to see why sometimes compromising can feel bad. It’s important to de-couple mission critical items
+                                    with “nice-to-haves”. This can be tricky to accomplish, but it comes back to clearly thinking about your team’s mission statement, and the values that underpin it. Delaying a response to a request in order to provide
+                                    more accurate information may be a compromise to an email response policy, but hastily replying without fact checking can have dire consequences.
+                                </p>
+                                </li>
 
-          </div>
-        </div>
-      </div>
-      <hr>
-    
-      <!-- Blog entry -->
-      <!-- <div class="w3-card-4 w3-margin w3-white">
+
+                            </ol>
+                            </li>
+
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Blog entry -->
+                <!-- <div class="w3-card-4 w3-margin w3-white">
       <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%">
         <div class="w3-container">
           <h3><b>BLOG ENTRY</b></h3>
@@ -127,17 +126,25 @@
           </div>
         </div>
       </div> -->
-    <!-- END BLOG ENTRIES -->
+                <!-- END BLOG ENTRIES -->
+            </div>
+        </div>
     </div>
-</div>
-</div>
 </body>
 <script>
-    function read_more(){
+    function read_more() {
+        var element = document.getElementById("4things");
+        element.classList.toggle("w3-hide");
+    }
 
-    
-  var element = document.getElementById("4things");
-  element.classList.toggle("w3-hide");
-}
+    function clickFunction() {
+        var x = document.getElementById("contact");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
 </script>
+
 </html>
