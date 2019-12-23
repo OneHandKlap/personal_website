@@ -20,6 +20,10 @@
   }
 
 } 
+.project-info{
+  padding-top: 50px;
+  display: none;
+}
 .carousel-item{
     position:relative;
     z-index: 1;
@@ -108,22 +112,34 @@
       <h3 style="padding: 35px;">Projects
         <small class="text-muted"> - click an image to get more information</small>
       </h3>
-      <div class = "d-flex justify-content-around projects-container" width=100%>
-        <div class="d-flex project">
-          <div class= "container project-image" id="project1">
-            <img src="imgs/ATM.jpg" width=100%></div>
-          <div class="d-none project-info" id="project1-info">some information</div>
+      <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Data Analytics</h5>
+                <p class="card-text">Project for small business insight analytics</p>
+                <img src="imgs/ATM.jpg" width="100%" alt="Picture of an ATM" style="padding-bottom: 35px;">
+                <a href="#" class="btn btn-primary">More Information</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Game Development</h5>
+                <p class="card-text">Student organized project for collaborative software development</p>
+                <img src="imgs/rektlogo3.png" width="100%" alt="Project Logo" style="padding-bottom: 35px;">
+                <a href="#" class="btn btn-primary">More Information</a>
+              </div>
+              </div>
+            </div>
         </div>
-        <div class="d-flex project">
-          <div class="container project-image" id="project2">
-            <img src="imgs/rektlogo3.png"  width=100%></div>
-          <div class="d-none  project-info" id="project2-info">some information</div>
-        </div>
-      </div>
-    </div>
     <script>
-        $( ".project1-image" ).click(function() {
-          $( '.project1-info' ).toggle();
+        $( "#project1" ).click(function() {
+          $( "#project1-info" ).toggle();
+        });
+        $( "#project2" ).click(function() {
+          $( "#project2-info" ).toggle();
         });
     </script>
 </body>
